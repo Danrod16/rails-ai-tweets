@@ -1,0 +1,6 @@
+<!-- app/views/tweets/show.html.erb -->
+<strong>Tweet (<%= @tweet.shortened&.size %>):</strong>
+<blockquote class="blockquote"><%= @tweet.shortened %></blockquote>
+
+<strong>Original: </strong>
+<%= simple_format @tweet.long %>
